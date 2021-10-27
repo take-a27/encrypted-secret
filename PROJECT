@@ -1,0 +1,16 @@
+domain: take.com
+layout:
+- go.kubebuilder.io/v3
+projectName: encrypted-secret
+repo: take.com/encryptedSecret
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: take.com
+  group: encryption
+  kind: EncryptedSecret
+  path: take.com/encryptedSecret/api/v1
+  version: v1
+version: "3"
